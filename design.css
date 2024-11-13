@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: url('/Background.svg') no-repeat center center/cover;
   }
   
   /* Navigation bar styling */
@@ -41,7 +42,7 @@ body {
   
 .front-page {
     height: 100vh;
-    background: url('/Background.svg') no-repeat center center/cover;
+    
     display: flex;
     align-items: center;
     justify-content: center;
