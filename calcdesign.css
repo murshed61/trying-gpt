@@ -1,0 +1,105 @@
+/* General Reset */
+body {
+  background-image: url(./bg2.jpg);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* Ensures padding and borders are included in element sizes */
+}
+
+/* Navigation bar container */
+.navbar {
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Align items vertically */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Start items from the top */
+  padding: 20px; /* Padding inside the navbar */
+  background-color: #333; /* Dark background */
+  width: 200px; /* Fixed width for vertical navbar */
+  height: 100vh; /* Full height */
+  position: fixed; /* Stays in place while scrolling */
+}
+
+/* Navigation links */
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  padding: 10px 0; /* Spacing between items */
+  font-size: 18px; /* Font size */
+  width: 100%; /* Full width for clickable area */
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #575757; /* Highlight on hover */
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 220px; /* Leaves space for the navbar */
+  padding: 20px;
+  min-height: 100vh; /* Full page height */
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Horizontally centers the calculator */
+  align-items: center; /* Vertically centers the calculator */
+}
+
+/* Calculator container */
+.calculator {
+  display: inline-block; /* Ensures it doesn't stretch unnecessarily */
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+/* Calculator display */
+#calc-display {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons grid */
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px); /* 4 buttons per row */
+  gap: 10px; /* Spacing between buttons */
+}
+
+/* Calculator buttons */
+.calc-buttons button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #575757; /* Button color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calc-buttons button:hover {
+  background-color: #00bcd4; /* Hover color */
+}
+
+/* Special buttons like "=" or "C" */
+.calc-buttons button:nth-child(16),
+.calc-buttons button:nth-child(17) {
+  background-color: #f44336; /* Red buttons for clear and equals */
+}
+
+.calc-buttons button:nth-child(16):hover,
+.calc-buttons button:nth-child(17):hover {
+  background-color: #ff5722; /* Hover color for red buttons */
+}
